@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simon</title>
+    <link rel="stylesheet" href="fot.css">
+</head>
+<body class="hom">
+    <div id="tim">
+        
+        <h1 id="timet"></h1>
+    </div>
+    <div id="ms">
+        <br>
+        <br>
+        <p>
+            گل سنه وانتي طيبه يا ﺟميلة الﺟميلاﭢ يا قمرت القمرات 🫣 و عبال 1000 سنه ويارب اشوفك ديما ناﺟحه فى دراستگ و ﺣياﭢﻜ ويارب السنه الﺟديده دى تگون اسعد سنه عليكى و مليانه بركه و فرح ليكى و تبقى ناجحه اكتر و اكتر 😌❤
+        </p>
+        
+        
+        <button id="cnc">NEXT🎀✅</button>
+    </div>
+    
+    
+    <script>
+        
+        
+        function gff() {
+     let data = new Date();
+     let hawr = data.getHours();
+     let mints = data.getMinutes();
+     let sacen = data.getSeconds();
+    let day = data.getMonth();
+    let ssd ="🌜 Evening 🌛";
+     let dod = document.getElementById("bod");
+let sp = document.getElementById("sp");     
+     if(hawr == 0) {
+        hawr = 12 
+     }
+     if(hawr > 12) {
+       hawr = hawr - 12  
+      
+
+ 
+     }
+     
+        
+     
+    if(hawr < 12) { 
+
+  
+  ssd = "please Wait.... ";
+     }
+     if(mints < 10) {
+         mints = "0" + mints
+     }
+     if(sacen < 10) {
+         sacen = "0" + sacen
+     }
+
+ if(hawr == 12){
+   document.body.classList.add("vrr"); 
+}
+if(hawr == 1) {
+    document.body.classList.add("vrr"); 
+}   
+if(hawr == 2) {
+    document.body.classList.add("vrr"); 
+}      
+if(hawr == 3) {
+   document.body.classList.add("vrr"); 
+}   
+document.getElementById("timet").innerText =
+hawr +" ∆ " +mints + " ∆ " + sacen+" please Wait "  ; 
+   
+ }
+ 
+
+       
+       setInterval(function() {
+    gff()
+},1000)
+document.getElementById("cnc").onclick = ()=>{
+    
+    document.getElementById("ms").style.transform="translateX(-200%)"; 
+  location.href="topakg.html"; 
+}
+    </script>
+</body>
+</html>
